@@ -1,0 +1,279 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.principal_container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #274472;
+  color: #f1f1f1;
+  line-height: 1.5;
+}
+
+/* Header and navigate */
+.header {
+  background-color: #41729F;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ffffff;
+}
+
+.header__h1 {
+  color: #000000;
+  font-size: 2em;
+}
+
+.header__unordered_list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.header__list {
+  margin: 10px 15px;
+}
+
+.header__direction {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header__direction:hover {
+  color: #ffffff;
+}
+
+/* Principal content */
+.principal_information {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #5885AF;
+  border-radius: 8px;
+}
+
+/*Index*/
+.image{
+  margin: 20px 0;
+  text-align: center;
+}
+
+.image__me {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.principal_information__introduction{
+    margin-bottom: 30px;
+
+}
+
+
+/*Proyects*/
+
+.link_page{
+  text-decoration: none;
+}
+
+.principal_information__proyects{
+  margin-bottom: 30px;
+}
+
+.container__proyects{
+  background-color: #6a96dd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+}
+
+.proyects__number_proyect{
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.container__proyects:hover{
+  transform: scale(1.05);
+  border-color: white;
+}
+
+
+
+/*Contact*/
+
+.contact_form {
+  background-color: #274472;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact_form__principal_container{
+  border: 1px solid #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+.contact_form__category{
+  display: block;
+  margin-top: 10px;
+}
+
+.contact_form__send{
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+.send{
+   background-color: #5885AF;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #ffcc00;
+}
+
+
+
+.personal_information{
+  margin-top: 10px;
+  background-color: #274472;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px;
+}
+
+
+
+/*About me*/
+
+.information{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1fr, 1fr);
+  justify-content: center;
+}
+
+.information__image{
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  
+}
+
+.information__image:hover{
+  transform: scale(1.05);
+  
+}
+
+.kameha__contenedor {
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Goku image */
+.kameha__goku {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+ 
+}
+
+/* Energy wave animation effect */
+.kameha__onda {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 0;
+  height: 40px;
+  background: cyan;
+  box-shadow: 0 0 20px cyan;
+  animation: kame 2s infinite;
+}
+
+/* Keyframe animation for the kamehameha wave */
+@keyframes kame {
+  0% { width: 0; opacity: 0.6; }
+  50% { width: 300px; opacity: 1; }
+  100% { width: 0; opacity: 0.6; }
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #C3E0E5;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+/* Responsive */
+
+/*Mobile*/
+@media (max-width: 767px) {
+.header__unordered_list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+.header__list {
+    margin: 8px 0;
+  }
+
+  .kameha__goku {
+    width: 0x; 
+  }
+
+  .kameha__onda {
+    top: 0px;
+    left: 0px;
+  }
+.images{
+  display: flex;
+  flex-direction: column;
+}
+}
+ 
+/*Tablets*/
+@media (min-width: 768px) and (max-width: 1023px){
+  .kameha__goku {
+    width: 200px;
+  }
+
+  .kameha__onda {
+    top: 0px;
+    left: 0px;
+  }
+ 
+}
+
