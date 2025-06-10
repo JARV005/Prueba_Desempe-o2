@@ -1,4 +1,8 @@
 # Prueba_Desempe-o2
+Johan Alexander Rivera Vasquez
+Clan: Van Rossum
+Correo: johanalexanderriveravasquez@gmail.com
+C.C: 1025644849
 
 📋 Description: this is a Web Site about my self and someone of my proyects
 
@@ -13,3 +17,5 @@ Use only HTML5 and CSS
 
 🎨 Color palette
 https://www.canva.com/colors/color-palettes/window-tide/
+
+
